@@ -32,6 +32,7 @@ class _MywidgetState extends State<MyWidget> {
       onChanged: (newValue) {
         _doSomething(newValue);
       },
+      //to place check button on left
       controlAffinity: ListTileControlAffinity.leading,
     );
   }
