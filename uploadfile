@@ -1,0 +1,39 @@
+ /*//uploading image and text
+  Future uploadmultipleimage() async {
+    var request = http.MultipartRequest(
+        'POST',
+        Uri.parse(
+            "http://192.168.1.4:8080/FileUploadController.cs/UploadFile"));
+    request.fields["meterunit"] = "2343434";
+    request.fields["metermont"] = "34";
+
+    var multipartFile = http.MultipartFile.fromBytes(
+      'file',
+      (await rootBundle.load('assets/images/register.jpg'))
+          .buffer
+          .asUint8List(),
+      filename: 'picture', // use the real name if available, or omit
+      contentType: MediaType('image', 'jpg'),
+    );
+
+    request.files.add(multipartFile);
+    var res = await request.send();
+    print(res.statusCode.toString());
+  }*/
+
+  //upload image file and text
+  /* uploadFile() async {
+    var postUri = Uri.parse("http://192.168.1.4:8080/FileUpload.ashx");
+    var request = new http.MultipartRequest("POST", postUri);
+    request.fields['meterunit'] = '342342';
+    request.fields["meterdate"] = '23';
+    request.files.add(new http.MultipartFile.fromBytes(
+        'file',
+        await File.fromUri(Uri.parse('assets/images/register.jpg'))
+            .readAsBytesSync(),
+        contentType: MediaType('image', 'jpg')));
+
+    request.send().then((response) {
+      if (response.statusCode == 200) print("Uploaded!");
+    });
+  }*/
