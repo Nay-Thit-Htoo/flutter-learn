@@ -1,0 +1,8 @@
+1. Class ဆောက်
+class Strings
+{
+  Strings._();
+  static const welcomescreentitle='''Ready to find
+  your favourite lessons?''';
+}
+ဆောက်ပြီးတာနဲ့ Strings.welcomescreentitle ဆိုပြီးခေါလို့ရပြီ
